@@ -5,23 +5,23 @@
 //Dec 3 2015
 //Added Epson PWRLITE 93 Network IP type ESC commands
 //Updated with Dell_2400MP 5/19/2016 pat
+//Added Toshiba TLP-X4100 also found in High End Systems DL1 11/20/20 Giff
 $PROJECTORS = Array(
 
 
 
 // To add another projector fill out the below and remove the //
-//     Array("NAME" => "NAME_OF_PROJECTOR",
-//              
-//                "ON" => "\x30\x30\x21\x0D",
-//                "OFF" => "\x30\x30\x22\x0D",
-//                "VIDEO" => "\x30\x30\x5F\x76\x31",
-//
-//                "BAUD_RATE" => "9600",
-//                "CHAR_BITS" => "8",
-//                "STOP_BITS" => "1",
-//                "PARITY" => "none"
-//),
-
+		Array("NAME" => "TOSHIBA_TLP-X4100",
+              
+	   			"ON" => "\x43\x30\x30\x0a",
+	   			"OFF" => "\x43\x30\x31\x0a",
+	   			"INPUT1" => "\x43\x30\x35\x0a",
+		      
+	   			"BAUD_RATE" => "19200",
+	   			"CHAR_BITS" => "8",
+	   			"STOP_BITS" => "1",
+	   			"PARITY" => "none"
+		),
 		Array("NAME" => "PJLINK",
 				"PROTOCOL" => "PJLINK",
 				"ON" => "set_power_state 1",
